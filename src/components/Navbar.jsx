@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import "normalize.css";
-import "../styles/App.css";
+import "../styles/App.scss";
 
 export default function Navbar() {
   return (
@@ -14,33 +14,25 @@ export default function Navbar() {
         <ul className="navBtnCont">
           <li className="navBtn">
             <NavLink className="navBtnLink" to="/">
-              About
+              Features
             </NavLink>
           </li>
           <li className="navBtn">
             <NavLink className="navBtnLink" to="/portfolio">
-              Portfolio
+              Domains
             </NavLink>
           </li>
           <li className="navBtn">
             <NavLink className="navBtnLink" to="/contact">
-              Contact
+              Pricing
             </NavLink>
           </li>
           <li className="navBtn">
             <NavLink className="navBtnLink" to="/resume">
-              Resume
+              Enterprise
             </NavLink>
           </li>
         </ul>
-        <div className="socialIcons">
-          <a href="https://www.linkedin.com/in/cody-ktestakis/">
-            <img className="linkedIcon" src={LiIcon} alt="linkedin-icon" />
-          </a>
-          <a href="https://github.com/Cktestakis">
-            <img className="gitIcon" src={GitIcon} alt="github-icon" />
-          </a>
-        </div>
       </nav>
     </div>
   );
