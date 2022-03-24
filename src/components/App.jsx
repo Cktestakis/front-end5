@@ -1,9 +1,9 @@
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
-import Features from "./components/features/Features";
-import Domains from "./components/domains/Domains";
-import Pricing from "./components/pricing/Pricing";
-import Enterprise from "./components/enterprise/Enterprise";
+import Portfolio from "./components/portfolio/Portfolio";
+import Works from "./components/works/Works";
+import Testimonials from "./components/testimonials/Testimonials";
+import Contact from "./components/contact/Contact";
 import "./App.scss";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
@@ -16,13 +16,11 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
-        <Features />
-        <Domains />
-        <Pricing />
-        <Enterprise />
+        <Portfolio />
+        <Works />
+        <Testimonials />
+        <Contact />
       </div>
     </div>
   );
 }
-
-export default App;
