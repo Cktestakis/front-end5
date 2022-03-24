@@ -1,15 +1,17 @@
-import Navbar from "./components/Navbar";
+import Topbar from "./components/topbar/Topbar";
+import { Person, Mail } from "@material-ui/icons";
 
-import "./styles/App.scss";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-export default function App() {
+function App() {
+  // const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <>
-      <Router>
-        <Navbar />
-      </Router>
-    </>
+    <div className="sections">
+      <Intro />
+      <Portfolio />
+      <Works />
+      <Testimonials />
+      <Contact />
+    </div>
   );
 }
+
+export default App;
